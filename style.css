@@ -7,6 +7,10 @@ body{
     padding-right: 15px;
     max-width: 1170px;
     margin: auto;
+    position: relative;
+}
+.center{
+    text-align: center;
 }
 .navigation{
     display: flex;
@@ -54,4 +58,62 @@ body{
     background-image: url(/picture/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:center center;
+    color: white;
+    padding-top: 260px;
+    padding-bottom: 285px;
+}
+.pizza{
+    position: absolute;
+    right: 0;
+    top:-230px;
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 23px;
+}
+.description{
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 570px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 24px;
+}
+.btn{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 16px 0px;
+    max-width: 190px;
+    text-align: center;
+}
+.h2{
+    font-size: 45px;
+    color: #282828;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-right: 127px;
+    padding-left: 127px;
+}
+.h2::before, .h2::after{
+    content: '';
+    position: absolute;
+    background-image:url(picture/item.png);
+    display: block;
+    width: 102px;
+    height: 28px;
+    top: 14px;
+}
+.h2::before{
+    left:0;
+}
+.h2::after{
+    right: 0;
 }

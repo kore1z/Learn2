@@ -1,3 +1,11 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Regular.ttf);
+    src: url(fonts/Montserrat-Bold.ttf);
+    font-family: "Roboto";
+    src:url(fonts/Roboto-Regular.ttf);
+    src:url(fonts/Roboto-Black.ttf)
+}
 body{
     background-color: #eaeaea;
     font-family: 'Montserrat', sans-serif;
@@ -55,7 +63,7 @@ body{
     color: #494949;
 }
 .banner{
-    background-image: url(/picture/banner.png);
+    background-image: url(picture/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
@@ -101,6 +109,11 @@ body{
     display: inline-block;
     padding-right: 127px;
     padding-left: 127px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.p1{
+    font-family: 'Roboto', sans-serif;
 }
 .h2::before, .h2::after{
     content: '';
@@ -117,3 +130,93 @@ body{
 .h2::after{
     right: 0;
 }
+.h2 + p {
+    font-size: 20px;
+    color: #959595;
+    margin: 0;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 42px;
+}
+.menu > li {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+.menu >li::before{
+    content: '';
+    display: block;
+    width:2px;
+    height: 100%;
+    background-color:#494949;
+    position: absolute;
+    left:0;
+}
+.menu > li:first-child::before{
+    display: none;
+}
+.menu > li > a{
+    text-decoration: none;
+    color: #484848;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+}
+.menu > li > a.active{
+    border-bottom: 4px solid #ee252d;
+    position: relative;
+}
+.menu > li > a.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 24px;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ee252d;
+}
+.box{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+}
+.number{
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 0;
+    position: relative;
+    background-image:url(picture/item.png);
+}
+.number::before{
+    content: '';
+}
+.number-one::before{
+    background-image:url(picture/icon01.png);
+    width: 126px;
+    height: 71px;
+}
+.number-two::before{
+    background-image:url(picture/icon02.png);
+    background-image:url(picture/item.png);
+    width: 184px;
+    height: 81px;
+}
+
+.number-three::before{
+    background-image:url(picture/icon03.png);
+    width: 142px;
+    height: 68px;
+}
+
+
+  
